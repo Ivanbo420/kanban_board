@@ -1,27 +1,23 @@
-# Sakai
+## Servidor de desarrollo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+Ejecuta "ng serve" para iniciar un servidor de desarrollo. Navega a http://localhost:4200/.
 
-## Development server
+##Generación de código
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecuta "ng generate" component nombre-componente para generar un nuevo componente. También puedes usar "ng generate directive|pipe|service|class|guard|interface|enum|module".
 
-## Code scaffolding
+##Compilación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecuta "ng build" para compilar el proyecto. Los artefactos de la compilación se almacenarán en el directorio dist/.
 
-## Build
+##Ejecución de pruebas unitarias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta "ng test" para ejecutar las pruebas unitarias con Karma https://karma-runner.github.io/latest/index.html.
 
-## Running unit tests
+##Ejecución de pruebas end-to-end
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecuta "ng e2e" para ejecutar las pruebas end-to-end mediante una plataforma de tu elección. Para usar este comando, primero debes agregar un paquete que implemente capacidades de pruebas end-to-end.
 
-## Running end-to-end tests
+##Más ayuda
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obtener más ayuda sobre Angular CLI, utiliza "ng help" o consulta la referencia de comandos de Angular CLI.
