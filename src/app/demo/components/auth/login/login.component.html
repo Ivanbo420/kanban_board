@@ -1,0 +1,26 @@
+<div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden" style="background-color: #f4f4f4;">
+    <div class="flex flex-column align-items-center justify-content-center">                
+        <div style="border-radius: 50px; padding: 2rem; background: linear-gradient(180deg, #4a4a4a 50%, rgba(74, 74, 74, 0) 250%);">
+            <div class="w-full surface-card py-8 px-5 sm:px-8" style="border-radius: 90px; background-color: #ffffff; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);">
+                <div class="text-center mb-5">
+                    <div class="text-900 text-3xl font-medium mb-3" style="color: #333;">INICIAR SESIÓN</div>
+                    <span class="text-600 font-medium" style="color: #666;">BIENVENIDO AL GESTOR KANBAN</span>
+                </div>
+
+                <div>
+                    <label for="usuario" class="block text-900 text-xl font-medium mb-2" style="color: #333;">Usuario</label>
+                    <input id="usuario" type="text" placeholder="Usuario" pInputText class="w-full md:w-30rem mb-5" style="padding: 1rem; border: 1px solid #ccc; border-radius: 8px;">
+
+                    <label for="contrasena" class="block text-900 font-medium text-xl mb-2" style="color: #333;">Contraseña</label>
+                    <p-password id="contrasena" [(ngModel)]="contrasena" placeholder="Contraseña" [toggleMask]="true" styleClass="mb-5" inputStyleClass="w-full p-3 md:w-30rem" style="border: 1px solid #ccc; border-radius: 8px;"></p-password>
+
+                    <div class="flex align-items-center justify-content-between mb-5 gap-5">
+
+                    </div>
+
+                    <button pButton pRipple label="INGRESAR" class="w-full p-3 text-xl" style="background-color: #4a4a4a; color: #fff; border-radius: 8px;"[routerLink]="['/']"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
