@@ -11,10 +11,13 @@ import { EventService } from './demo/service/event.service';
 import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
-    declarations: [AppComponent, NotfoundComponent],
-    imports: [AppRoutingModule, AppLayoutModule],
+    declarations: [AppComponent, NotfoundComponent, RegisterComponent],
+    imports: [AppRoutingModule, AppLayoutModule, FormsModule],
     providers: [
         { provide: LocationStrategy, useClass: PathLocationStrategy },
         CountryService, CustomerService, EventService, IconService, NodeService,
@@ -23,3 +26,4 @@ import { PhotoService } from './demo/service/photo.service';
     bootstrap: [AppComponent],
 })
 export class AppModule {}
+
